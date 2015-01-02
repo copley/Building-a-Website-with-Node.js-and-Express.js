@@ -9,6 +9,7 @@
   "author": "Ray Villalobos",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^1.0.0",
     "express": "^3.5.1"
   }
 }
