@@ -7,23 +7,16 @@ app.set('view engine', 'ejs');
 app.get('/', function(req, res) {
   res.render('default', {
       title: 'Home',
+      classname: 'home',
       users: ['Ray', 'Morten', 'James']
       } );
 });
 
-app.get('/me', function(req, res) {
-    res.send(' me ');
-});
-
-app.get('/who/:name?', function(req, res) {
-    var name = req.params.name;
-    res.send(name + ' was here');
-});
-
-app.get('/who/:name?/:title?', function(req, res) {
-    var name = req.params.name;
-    var title = req.params.title;
-    res.send('<p>name: + ' + name + ' <br>title: ' + title + '</p>');
+app.get('/about', function(req, res) {
+    res.render('default', {
+        title: 'About Us',
+        classname: 'about'
+    } );
 });
 
 app.get('*', function(req, res) {
