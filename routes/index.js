@@ -1,14 +1,9 @@
-exports.index = function(req, res) {
-    res.render('default', {
-        title: 'Home',
-        classname: 'home',
-        users: ['Ray', 'Morten', 'James']
-    });
-}
+var express = require('express');
+var router = express.Router();
 
-exports.about = function(req, res) {
-    res.render('default', {
-        title: 'About Us',
-        classname: 'about'
-    });
-}
+/* GET home page. */
+router.get('/', function(req, res) {
+  res.render('index', { title: 'Express' });
+});
+
+module.exports = router;
