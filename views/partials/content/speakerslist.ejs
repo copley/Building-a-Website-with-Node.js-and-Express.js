@@ -11,6 +11,16 @@
                     <a href="/speakers/<%= item.shortname %>">
                         <img class="speaker" src="/images/speakers/<%= item.shortname %>_tn.jpg" alt="Photo of <%= item.name %>">
                     </a>
+                    <% if (page != 'home'){ %>
+                        <% if(page ==='artistList'){ %>
+                            <%- item.summary %>
+                        <% } else { %>
+                            <%- item.description %>
+                        <% } %>
+
+                    <% } %>
+
+
                 </p>
             </article>
         <%  }); %>
