@@ -20,3 +20,16 @@ npm start
 
 ================================================
 https://www.jsoneditoronline.org/  
+
+================================================  
+
+
+ 05 Working with Models, Views, and Routes | 05_07-Publishing our application
+
+git init  
+git add .  
+git commit -m "Final Roux Project"  
+heroku login  
+heroku git:remtote -a rouxme  
+git push heroku master  
+
